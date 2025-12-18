@@ -1,0 +1,440 @@
+{
+  "coachingStaff": [
+    {
+      "name": "Qurban Qurbanov",
+      "role": "Head Coach",
+      "nationality": "Azerbaijan",
+      "age": 52,
+      "experience_years": 20,
+      "club": "Qarabağ FK",
+      "image": "/trainers/1.jpg"
+    },
+    {
+      "name": "Elçin Rahmanov",
+      "role": "Assistant Coach",
+      "nationality": "Azerbaijan",
+      "age": 45,
+      "experience_years": 15,
+      "club": "Qarabağ FK",
+      "image": "/trainers/2.jpg"
+    },
+    {
+      "name": "Müşfiq Hüseynov",
+      "role": "Coach",
+      "nationality": "Azerbaijan",
+      "age": 48,
+      "experience_years": 18,
+      "club": "Qarabağ FK",
+      "image": "/trainers/3.jpg"
+    },
+    {
+      "name": "Zaur Tağızadə",
+      "role": "Coach",
+      "nationality": "Azerbaijan",
+      "age": 44,
+      "experience_years": 16,
+      "club": "Qarabağ FK",
+      "image": "/trainers/4.jpg"
+    },
+    {
+      "name": "Elxan Həsənov",
+      "role": "Goalkeeper Trainer",
+      "nationality": "Azerbaijan",
+      "age": 50,
+      "experience_years": 22,
+      "club": "Qarabağ FK",
+      "image": "/trainers/5.jpg"
+    },
+    {
+      "name": "Chudomir Cokarov",
+      "role": "Coach",
+      "nationality": "Bulgaria",
+      "age": 42,
+      "experience_years": 14,
+      "club": "Qarabağ FK",
+      "image": "/trainers/6.jpg"
+    }
+  ],
+  "players": [
+    {
+      "name": "Şahrudin Məhəmmədəliyev",
+      "position": "Goalkeeper",
+      "number": 1,
+      "age": 31,
+      "nationality": "Azərbaycan",
+      "height": "1.87 m",
+      "weight": "80 kg",
+      "image": "/players/1.png",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 30,
+        "cleanSheets": 12,
+        "goalsConceded": 28
+      },
+      "bio": "Komandanın əsas qapıçısı, sürətli refleksləri və liderlik bacarığı ilə tanınır."
+    },
+    {
+      "name": "Fabiyan Buntiç",
+      "position": "Goalkeeper",
+      "number": 97,
+      "age": 28,
+      "nationality": "Xorvatiya",
+      "height": "1.94 m",
+      "weight": "88 kg",
+      "image": "/players/2.png",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 5,
+        "cleanSheets": 2,
+        "goalsConceded": 10
+      },
+      "bio": "Təcrübəli qapıçıdır, əsasən əvəzçi rolunda çıxış edir."
+    },
+    {
+      "name": "Mateusz Koxalski",
+      "position": "Goalkeeper",
+      "number": 99,
+      "age": 25,
+      "nationality": "Polşa",
+      "height": "1.92 m",
+      "weight": "85 kg",
+      "image": "/players/3.png",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 10,
+        "cleanSheets": 4,
+        "goalsConceded": 14
+      },
+      "bio": "Gənc və perspektivli qapıçı, Sabit oyunçudur."
+    },
+    {
+      "name": "Matheus Silva",
+      "position": "Defender",
+      "number": 2,
+      "age": 28,
+      "nationality": "Braziliya",
+      "height": "1.81 m",
+      "weight": "76 kg",
+      "image": "/players/4.png",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 25,
+        "goals": 1,
+        "assists": 0
+      },
+      "bio": "Sürətli müdafiəçi, həm sol, həm sağ qabarda oynaya bilir."
+    },
+    {
+      "name": "Sami Mmaee",
+      "position": "Defender",
+      "number": 3,
+      "age": 29,
+      "nationality": "Mərakeş",
+      "height": "1.88 m",
+      "weight": "83 kg",
+      "image": "/players/5.jpg",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 20,
+        "goals": 0
+      },
+      "bio": "Komandanın ən möhkəm mərkəz müdafiəçilərindən biridir."
+    },
+    {
+      "name": "Bəhlul Mustafazadə",
+      "position": "Defender",
+      "number": 13,
+      "age": 28,
+      "nationality": "Azərbaycan",
+      "height": "1.83 m",
+      "weight": "79 kg",
+      "image": "/players/6.png",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 24,
+        "goals": 1
+      },
+      "bio": "Təcrübəli müdafiəçi, topu yaxşı oxuyur və kəsir."
+    },
+    {
+      "name": "Dani Bolt",
+      "position": "Defender",
+      "number": 18,
+      "age": 26,
+      "nationality": "Braziliya",
+      "height": "1.80 m",
+      "weight": "75 kg",
+      "image": "/players/7.png",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 17,
+        "goals": 0
+      },
+      "bio": "Sürətli cinah müdafiəçisi, hücuma qoşulmağı sevir."
+    },
+    {
+      "name": "Abbas Hüseynov",
+      "position": "Defender",
+      "number": 30,
+      "age": 30,
+      "nationality": "Azərbaycan",
+      "height": "1.78 m",
+      "weight": "77 kg",
+      "image": "/players/8.png",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 12,
+        "goals": 0
+      },
+      "bio": "Sağ cinah müdafiəçisi, müdafiə ilə yanaşı ötürmələr də edir."
+    },
+    {
+      "name": "Elvin Cəfərquliyev",
+      "position": "Defender",
+      "number": 44,
+      "age": 25,
+      "nationality": "Azərbaycan",
+      "height": "1.76 m",
+      "weight": "74 kg",
+      "image": "/players/9.png",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 22,
+        "goals": 0
+      },
+      "bio": "Sol kant müdafiəçi, sürətli və çevik oyunçu."
+    },
+    {
+      "name": "Kevin Medina",
+      "position": "Defender",
+      "number": 81,
+      "age": 32,
+      "nationality": "Kolumbiya",
+      "height": "1.84 m",
+      "weight": "82 kg",
+      "image": "/players/10.png",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 23,
+        "goals": 1
+      },
+      "bio": "Mərkəz müdafiəçi, hava duelində güclüdür."
+    },
+    {
+      "name": "Kadi Borges",
+      "position": "Midfielder",
+      "number": 20,
+      "age": 29,
+      "nationality": "Braziliya",
+      "height": "1.78 m",
+      "weight": "73 kg",
+      "image": "/players/11.png",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 25,
+        "goals": 4,
+        "assists": 8
+      },
+      "bio": "Yarımmüdafiənin playmakeri, top paylama və hücumları qurmağı bacarır."
+    },
+    {
+      "name": "Pedro Bicalho",
+      "position": "Midfielder",
+      "number": 35,
+      "age": 24,
+      "nationality": "Braziliya",
+      "height": "1.75 m",
+      "weight": "70 kg",
+      "image": "/players/12.png",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 22,
+        "goals": 1,
+        "assists": 3
+      },
+      "bio": "Orta xəttdə sərbəst oyunçu, kreativ ötürmələri var."
+    },
+    {
+      "name": "Chris Kouakou",
+      "position": "Midfielder",
+      "number": 6,
+      "age": 25,
+      "nationality": "Fildişi Sahili",
+      "height": "1.80 m",
+      "weight": "74 kg",
+      "image": "/players/13.jpg",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 18,
+        "goals": 0
+      },
+      "bio": "Orta xəttin dayaq oyunçusu, müdafiə işini görür."
+    },
+    {
+      "name": "Marko Yankoviç",
+      "position": "Midfielder",
+      "number": 8,
+      "age": 30,
+      "nationality": "Monteneqro",
+      "height": "1.82 m",
+      "weight": "78 kg",
+      "image": "/players/14.png",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 20,
+        "goals": 2
+      },
+      "bio": "Təcrübəli orta sahə oyunçusu."
+    },
+    {
+      "name": "Leandro Andrade",
+      "position": "Midfielder",
+      "number": 15,
+      "age": 26,
+      "nationality": "Kabo-Verde",
+      "height": "1.79 m",
+      "weight": "71 kg",
+      "image": "/players/15.png",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 26,
+        "goals": 8,
+        "assists": 5
+      },
+      "bio": "Sərbəst hücumçu tipi midfielder, topu irəli daşıyır."
+    },
+    {
+      "name": "Toral Bayramov",
+      "position": "Midfielder",
+      "number": 27,
+      "age": 24,
+      "nationality": "Azərbaycan",
+      "height": "1.74 m",
+      "weight": "69 kg",
+      "image": "/players/16.png",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 23,
+        "goals": 2
+      },
+      "bio": "Gənc və perspektivli yarımmüdafiəçi."
+    },
+    {
+      "name": "Hikmət Cəbrayılzadə",
+      "position": "Midfielder",
+      "number": 32,
+      "age": 18,
+      "nationality": "Azərbaycan",
+      "height": "1.72 m",
+      "weight": "65 kg",
+      "image": "/players/17.png",
+      "contractUntil": "2027",
+      "stats": {
+        "matches": 10
+      },
+      "bio": "Gənc oyunçu, gələcək ümidlərdən biridir."
+    },
+    {
+      "name": "Camilo Durán",
+      "position": "Forward",
+      "number": 17,
+      "age": 23,
+      "nationality": "Kolumbiya",
+      "height": "1.75 m",
+      "weight": "70 kg",
+      "image": "/players/17.png",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 15,
+        "goals": 4
+      },
+      "bio": "Hücum xəttində əsas oyunçulardan biri."
+    },
+    {
+      "name": "Emmanuel Addai",
+      "position": "Forward",
+      "number": 11,
+      "age": 24,
+      "nationality": "Qana",
+      "height": "1.76 m",
+      "weight": "68 kg",
+      "image": "/players/18.jpg",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 24,
+        "goals": 3
+      },
+      "bio": "Sürətli hücumçu, cinahlardan daxil olub təhlükəli olur."
+    },
+    {
+      "name": "Nariman Axundzadə",
+      "position": "Forward",
+      "number": 7,
+      "age": 21,
+      "nationality": "Azərbaycan",
+      "height": "1.78 m",
+      "weight": "71 kg",
+      "image": "/players/17.png",
+      "contractUntil": "2027",
+      "stats": {
+        "matches": 18,
+        "goals": 3
+      },
+      "bio": "Gənc perspektivli hücumçu."
+    },
+    {
+      "name": "Musa Qurbanlı",
+      "position": "Forward",
+      "number": 22,
+      "age": 23,
+      "nationality": "Azərbaycan",
+      "height": "1.81 m",
+      "weight": "75 kg",
+      "image": "/players/19.png",
+      "contractUntil": "2026",
+      "stats": {
+        "matches": 14,
+        "goals": 2
+      },
+      "bio": "Hücumçu, sürətli və texnikalıdır."
+    }
+  ],
+  "news": [
+    {
+      "imgSrc": "/news-carousel/1.jpg",
+      "newsTitle": "Hər iki komanda 1 xala layiq idi"
+    },
+    {
+      "imgSrc": "/news-carousel/2.jpg",
+      "newsTitle": "Qarabağ” dünya reytinqində 68-cidir"
+    },
+    {
+      "imgSrc": "/news-carousel/3.png",
+      "newsTitle": "Səfərdə qollu heç-heçə"
+    },
+    {
+      "imgSrc": "/news-carousel/4.jpg",
+      "newsTitle": "U-19 son oyununu keçirdi"
+    },
+    {
+      "imgSrc": "/news-carousel/5.jpg",
+      "newsTitle": "“Qarabağ” – “Ayaks” oyununun hakimləri müəyyənləşdi"
+    },
+    {
+      "imgSrc": "/news-carousel/6.jpg",
+      "newsTitle": "Mətbuat konfransları və açıq məşqlərin vaxtları müəyyənləşdi"
+    },
+    {
+      "imgSrc": "/news-carousel/7.jpg",
+      "newsTitle": "Bakıda 6 qollu oyun"
+    },
+    {
+      "imgSrc": "/news-carousel/8.jpg",
+      "newsTitle": "“Son illər belə dinamik oyun nadir hallarda olurdu”"
+    },
+    {
+      "imgSrc": "/news-carousel/9.jpg",
+      "newsTitle": "“Uğurlu nəticə əldə etməyə çalışacağıq”"
+    }
+  ]
+}

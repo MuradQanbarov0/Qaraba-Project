@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.bg-primary {
+    background-color: #312759;
+}
+
+.text-primary {
+    color: #312759;
+}
+
+.content {
+    background: #ebebeb;
+}
+
+.active {
+    color: white;
+}

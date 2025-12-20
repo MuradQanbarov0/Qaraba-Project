@@ -6,6 +6,7 @@ const Trainers = () => {
   const endpoint = "http://localhost:3000/coachingStaff";
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
+  const [filteredData, setFilteredData] = useState([]);
 
   useEffect(() => {
     axios(endpoint).then((res) => {
@@ -15,11 +16,14 @@ const Trainers = () => {
     });
   }, []);
 
-  const filteredData = data.filter(
-    (trainer) =>
-      trainer.name.toLowerCase().includes(search.toLowerCase()) ||
-      trainer.role.toLowerCase().includes(search.toLowerCase())
-  );
+  useEffect(() => {
+    const filtered = data.filter(
+      (trainer) =>
+        trainer.name.toLowerCase().includes(search.toLowerCase()) ||
+        trainer.role.toLowerCase().includes(search.toLowerCase())
+    );
+    setFilteredData(filtered);
+  }, [search, data]);
   return (
     <div className="content">
       <Container>

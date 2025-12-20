@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Container from "../Components/Container";
 import axios from "axios";
+import { Link } from "react-router";
 
 const Players = () => {
   const endpoint = "http://localhost:3000/players";
@@ -42,16 +43,17 @@ const Players = () => {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {players.map(({ id, name, image, number }) => (
-                <div
+                <Link
+                  to={`/players/${id}`}
                   key={id}
-                  className="bg-white p-4 flex flex-col gap-4 items-center"
+                  className="bg-white p-4 flex flex-col gap-4 items-center hover:shadow-lg transition-shadow cursor-pointer"
                 >
                   <div className="text-center">
                     <h2 className="text-xl text-primary font-medium">{name}</h2>
                     <h4 className="text-sm text-primary">Nömrə: {number}</h4>
                   </div>
                   <img src={image} alt={name} />
-                </div>
+                </Link>
               ))}
             </div>
           </div>

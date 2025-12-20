@@ -1,5 +1,13 @@
 import Container from "../Components/Container";
-import { Facebook, Twitter, Instagram, Phone, Mail, MapPin, Send } from "lucide-react";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Phone,
+  Mail,
+  MapPin,
+  Send,
+} from "lucide-react";
 import { useState } from "react";
 
 const Contact = () => {
@@ -55,10 +63,12 @@ const Contact = () => {
 
   return (
     <div className="content">
-      <div className="bg-gradient-to-r from-primary to-purple-700 text-white py-16 mb-12">
+      <div className="bg-gradient-to-r from-primary to-secondary text-white py-16 mb-12">
         <Container>
           <h1 className="text-5xl font-bold mb-2">Əlaqə</h1>
-          <p className="text-lg opacity-90">Bizimləsiniz, suallarınız varsa əlaqə saxlayın</p>
+          <p className="text-lg opacity-90">
+            Bizimləsiniz, suallarınız varsa əlaqə saxlayın
+          </p>
         </Container>
       </div>
 
@@ -83,7 +93,9 @@ const Contact = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-primary mb-6">Bizə Yazın</h2>
+              <h2 className="text-2xl font-bold text-primary mb-6">
+                Bizə Yazın
+              </h2>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -138,16 +150,24 @@ const Contact = () => {
             </div>
 
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-primary mb-6">Əlavə Məlumat</h2>
+              <h2 className="text-2xl font-bold text-primary mb-6">
+                Əlavə Məlumat
+              </h2>
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-lg font-bold text-primary mb-2">Çalışma Saatları</h3>
-                  <p className="text-gray-700">Bazar ertəsi - Cuma: 09:00 - 18:00</p>
+                  <h3 className="text-lg font-bold text-primary mb-2">
+                    Çalışma Saatları
+                  </h3>
+                  <p className="text-gray-700">
+                    Bazar ertəsi - Cuma: 09:00 - 18:00
+                  </p>
                   <p className="text-gray-700">Şənbə: 10:00 - 16:00</p>
                   <p className="text-gray-700">Bazar: Kapalı</p>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-primary mb-2">Sosial Şəbəkələr</h3>
+                  <h3 className="text-lg font-bold text-primary mb-2">
+                    Sosial Şəbəkələr
+                  </h3>
                   <div className="flex gap-4">
                     {social.map(({ id, icon, link, name }) => (
                       <a
@@ -162,20 +182,24 @@ const Contact = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-primary mb-2">Haqqımızda</h3>
+                  <h3 className="text-lg font-bold text-primary mb-2">
+                    Haqqımızda
+                  </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Qarabağ FK 1987-ci ildən bu adla çıxış etməyə başlayıb. Komandamız
-                    12 dəfə Azərbaycan çempionu, 8 dəfə ölkə kubokunun sahibi
-                    olmuşdur.
+                    Qarabağ FK 1987-ci ildən bu adla çıxış etməyə başlayıb.
+                    Komandamız 12 dəfə Azərbaycan çempionu, 8 dəfə ölkə
+                    kubokunun sahibi olmuşdur.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-primary to-purple-700 text-white rounded-lg p-8 text-center">
+          <div className="bg-gradient-to-r from-primary to-secondary text-white rounded-lg p-8 text-center">
             <h2 className="text-2xl font-bold mb-2">Soruşdun mu?</h2>
-            <p className="text-lg">Bizimlə əlaqə saxlayın və cəvab almaq üçün gözləməyin!</p>
+            <p className="text-lg">
+              Bizimlə əlaqə saxlayın və cəvab almaq üçün gözləməyin!
+            </p>
           </div>
         </div>
       </Container>

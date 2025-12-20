@@ -6,6 +6,7 @@ import { Link } from "react-router";
 const Players = () => {
   const endpoint = "http://localhost:3000/players";
   const [data, setData] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     axios(endpoint).then((res) => {
@@ -14,7 +15,12 @@ const Players = () => {
       }
     });
   }, []);
-  const groupedPlayers = data.reduce((acc, player) => {
+
+  const filteredData = data.filter((player) =>
+    player.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const groupedPlayers = filteredData.reduce((acc, player) => {
     const position = player.position || "Digər";
     if (!acc[position]) {
       acc[position] = [];
@@ -31,6 +37,16 @@ const Players = () => {
             Oyunçular
           </h2>
           <div className="h-0.5 w-full bg-primary"></div>
+        </div>
+
+        <div className="w-full mb-8">
+          <input
+            type="text"
+            placeholder="Oyunçu adını axtarın..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full px-4 py-3 border border-primary rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+          />
         </div>
 
         {Object.entries(groupedPlayers).map(([position, players]) => (

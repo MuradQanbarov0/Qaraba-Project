@@ -36,7 +36,7 @@ const Trainers = () => {
             placeholder="Məşqçini axtar"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
+            className="w-100 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
           />
         </div>
 

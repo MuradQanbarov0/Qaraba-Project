@@ -8,15 +8,10 @@ import {
   MapPin,
   Send,
 } from "lucide-react";
-import { useState } from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
   const contactInfo = [
     {
       id: 1,
@@ -47,19 +42,26 @@ const Contact = () => {
     { id: 3, icon: <Instagram size={20} />, link: "/", name: "Instagram" },
   ];
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
+  const validationSchema = Yup.object({
+    name: Yup.string().required("Ad tələb olunur"),
+    email: Yup.string()
+      .email("Düzgün email daxil edin")
+      .required("Email tələb olunur"),
+    message: Yup.string().required("Mesaj tələb olunur"),
+  });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-    setFormData({ name: "", email: "", message: "" });
-  };
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+    validationSchema,
+    onSubmit: (values) => {
+      console.log("Göndərilən məlumat:", values);
+      formik.resetForm();
+    },
+  });
 
   return (
     <div className="content">
@@ -96,7 +98,7 @@ const Contact = () => {
               <h2 className="text-2xl font-bold text-primary mb-6">
                 Bizə Yazın
               </h2>
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={formik.handleSubmit} className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Adınız
@@ -104,13 +106,17 @@ const Contact = () => {
                   <input
                     type="text"
                     name="name"
-                    value={formData.name}
-                    onChange={handleChange}
+                    value={formik.values.name}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
                     placeholder="Adınız"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition"
-                    required
                   />
+                  {formik.errors.name && formik.touched.name && (
+                    <p className="text-red-500 text-sm mt-1">{formik.errors.name}</p>
+                  )}
                 </div>
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Email
@@ -118,27 +124,35 @@ const Contact = () => {
                   <input
                     type="email"
                     name="email"
-                    value={formData.email}
-                    onChange={handleChange}
+                    value={formik.values.email}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
                     placeholder="Email"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition"
-                    required
                   />
+                  {formik.errors.email && formik.touched.email && (
+                    <p className="text-red-500 text-sm mt-1">{formik.errors.email}</p>
+                  )}
                 </div>
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Mesaj
                   </label>
                   <textarea
                     name="message"
-                    value={formData.message}
-                    onChange={handleChange}
+                    value={formik.values.message}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
                     placeholder="Mesajınız"
                     rows="5"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition resize-none"
-                    required
                   ></textarea>
+                  {formik.errors.message && formik.touched.message && (
+                    <p className="text-red-500 text-sm mt-1">{formik.errors.message}</p>
+                  )}
                 </div>
+
                 <button
                   type="submit"
                   className="w-full bg-primary text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105"
